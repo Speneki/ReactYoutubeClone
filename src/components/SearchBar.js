@@ -16,7 +16,9 @@ class SearchBar extends React.Component {
 
     handleSubmit = () => {
         const { searchTerm } = this.state;
+        const { onFormSubmit } = this.props;
         
+        onFormSubmit(searchTerm)
     }
     
     render(){
